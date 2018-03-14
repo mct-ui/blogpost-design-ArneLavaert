@@ -1,47 +1,45 @@
 /*
     Fonts
     ---
-    @font-face declarations
+    @Font-face declarations
 */
 
 @font-face {
     font-family: "Inter UI";
     font-weight: 400;
-    src: url("../fonts/Inter-UI-Regular.woff2") format("woff2");
-    src: url("../fonts/Inter-UI-Regular.woff") format("woff");
+    src: url("../fonts/Inter-UI-Regular.woff2") format("woff2"), url("../fonts/Inter-UI-Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: "Inter UI";
     font-weight: 700;
-    src: url("../fonts/Inter-UI-Bold.woff2") format("woff2");
-    src: url("../fonts/Inter-UI-Bold.woff") format("woff");
+    src: url("../fonts/Inter-UI-Bold.woff2") format("woff2"), url("../fonts/Inter-UI-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Inter UI";
+    font-family: "Droid Serif";
     font-weight: 400;
-    src: url("../fonts/Droid-Serif-Regular-webfont.woff") format("woff");
+    src: url("../fonts/DroidSerif-Regular-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Inter UI";
+    font-family: "Droid Serif";
     font-weight: 400;
     font-style: italic;
-    src: url("../fonts/Droid-Serif-Italic-webfont.woff") format("woff");
+    src: url("../fonts/DroidSerif-Italic-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Inter UI";
+    font-family: "Droid Serif";
     font-weight: 700;
-    src: url("../fonts/Droid-Serif-Bold-webfont.woff") format("woff");
+    src: url("../fonts/DroidSerif-Bold-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Inter UI";
+    font-family: "Droid Serif";
     font-weight: 700;
     font-style: italic;
-    src: url("../fonts/Droid-Serif-BoldItalic-webfont.woff") format("woff");
+    src: url("../fonts/DroidSerif-BoldItalic-webfont.woff") format("woff");
 }
 
 /*
@@ -53,16 +51,18 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    /* font-family: "Inter-UI" "Helvetica Neue", Helvetica, arial, sans-serif; */
-    font-family: "Droid-Serif", Georgia, serif;
+    /* font-family: "Inter UI", "Helvetica Neue" Helvetica, arial, sans-serif; */
+    font-family: "Droid Serif", Georgia, serif;
     color: #5C6366;
     /* padding: 48px 24px 24px; */
     -webkit-font-smoothing: antialiased;
-    -mos-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -79,13 +79,13 @@ body {
  */
 
 ::-moz-selection {
-    background: #00e6a1;
+    background: #e85e00;
     color: white;
     text-shadow: none;
 }
 
 ::selection {
-    background: #00e6a1;
+    background: #00E6A1;
     color: white;
     text-shadow: none;
 }
@@ -111,16 +111,13 @@ h1 {
     font-size: 36px;
     line-height: 40px;
     margin: 0 0 24px;
-    color: #17181A;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 
 h2 {
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
-    color: #17181A;
-    font-family: "Inter-UI" "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 
 *+h2 {
@@ -131,25 +128,40 @@ h3 {
     font-size: 18px;
     line-height: 24px;
     margin: 0 0 24px;
-    color: #17181A;
-    font-family: "Inter-UI" "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 
-h4, h5, h6 {
+h1,
+h2,
+h3 {
+    color: #17181A;
+    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
+h4,
+h5,
+h6 {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 24px;
 }
 
-p, ol, ul, dl, table, address, figure {
+p,
+ol,
+ul,
+dl,
+table,
+address,
+figure {
     margin: 0 0 24px;
 }
 
-ul, ol {
+ul,
+ol {
     padding-left: 24px;
 }
 
-li ul, li ol {
+li ul,
+li ol {
     margin-bottom: 0;
 }
 
@@ -170,7 +182,6 @@ figcaption {
     font-size: 12px;
     line-height: 16px;
     padding-top: 8px;
-    /* color: Grey; */
 }
 
 hr {
@@ -181,15 +192,17 @@ hr {
 }
 
 a {
-    color: #00a1e6;
+    color: #00A1E6;
     transition: all .1s ease-in-out;
 }
 
-a:visited, a:active {
-    color: #00e6a1;
+a:visited,
+a:active {
+    color: #00E6A1;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #1ABAFF;
 }
 
@@ -204,18 +217,28 @@ a:hover, a:focus {
         /* padding: 48px 48px 24px; */
     }
     h1 {
-        font-size: 58px;
-        line-height: 64px;
+        font-size: 46px;
+        line-height: 56px;
     }
 }
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    h1 {
+        font-size: 52px;
+        line-height: 64px;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 58px;
+        line-height: 72px;
+    }
+}
 
 /*
     Print styles.
@@ -225,7 +248,9 @@ a:hover, a:focus {
 */
 
 @media print {
-    *, *:before, *:after {
+    *,
+    *:before,
+    *:after {
         background: transparent !important;
         color: #000 !important;
         /* Black prints faster:
@@ -233,7 +258,8 @@ a:hover, a:focus {
         box-shadow: none !important;
         text-shadow: none !important;
     }
-    a, a:visited {
+    a,
+    a:visited {
         text-decoration: underline;
     }
     a[href]:after {
@@ -246,13 +272,15 @@ a:hover, a:focus {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-    a[href^="#"]:after, a[href^="javascript:"]:after {
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
         content: "";
     }
     pre {
         white-space: pre-wrap !important;
     }
-    pre, blockquote {
+    pre,
+    blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
@@ -263,14 +291,18 @@ a:hover, a:focus {
     thead {
         display: table-header-group;
     }
-    tr, img {
+    tr,
+    img {
         page-break-inside: avoid;
     }
-    p, h2, h3 {
+    p,
+    h2,
+    h3 {
         orphans: 3;
         widows: 3;
     }
-    h2, h3 {
+    h2,
+    h3 {
         page-break-after: avoid;
     }
 }
@@ -283,7 +315,7 @@ a:hover, a:focus {
 
 .c-type-meta {
     font-size: 14px;
-    font-family: "Inter-UI" "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
     line-height: 16px;
 }
 
@@ -308,13 +340,14 @@ a:hover, a:focus {
     padding-top: 0;
 }
 
-.c-author__name, .c-author__meta {
+.c-author__name,
+.c-author__meta {
     margin-bottom: 0;
 }
 
 .c-author__meta {
     font-size: 14px;
-    font-family: "Inter-UI" "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
     line-height: 16px;
     margin-top: 4px;
 }
@@ -324,11 +357,21 @@ a:hover, a:focus {
     line-height: 16px;
 }
 
+@media (min-width: 992px) {
+    .c-author {
+        display: block;
+    }
+    .c-author__image {
+        margin-bottom: 16px;
+    }
+}
+
 /*
     Components: Article
 */
 
-.c-article__header, .c-article__body {
+.c-article__header,
+.c-article__body {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -341,27 +384,35 @@ a:hover, a:focus {
     padding: 0 24px;
 }
 
+.c-article__date {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
 @media (min-width: 768px) {
     .c-article__header {
         padding: 48px 48px 24px;
     }
-    .c-article__body {
-        padding: 24px 48px;
-    }
     .c-article__author {
         padding-bottom: 24px;
+    }
+    .c-article__body {
+        padding: 24px 48px;
     }
 }
 
 @media (min-width: 992px) {
-    .c-article__content {}
     .c-article__body {
         display: flex;
         flex-wrap: wrap;
     }
     .c-article__author {
-        padding-right: 24px;
         width: 25%;
+        padding-right: 24px;
+    }
+    .c-article__content {
+        width: 75%;
     }
 }
 
@@ -370,3 +421,13 @@ a:hover, a:focus {
     ---
     Utility classes to put specific spacing values onto elements
 */
+
+/*
+    Utilities: max-width
+    ---
+    Utility classes to put specific max widths onto elements
+*/
+
+.u-max-width-sm {
+    max-width: 36em;
+}
